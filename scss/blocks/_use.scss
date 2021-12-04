@@ -1,0 +1,75 @@
+.use{
+    padding: 80px 0;
+    background-image: url("../../images/bg.png");
+    background-position: right 0 top 70px;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::after{
+        content: "";
+        width: 50%;
+        height: 151px;
+        position: absolute;
+        background-image: url("../../images/chevron-line.png");
+        right: 0;
+        bottom: 80px   
+    }
+}
+
+.use__inner{
+    @include between;
+}
+
+.use__title{
+    max-width: 445px;
+    width: 100%;
+    @include titles-48;
+}
+
+.use__subtitle{
+    max-width: 445px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.use__button{
+    @include btn;
+}
+
+@media(max-width:768px){
+    .use{
+        padding-top:70px;
+
+        &::after{
+            width: 90%;
+            top:39%;
+            right:0;
+        }
+    }
+    .use__inner{
+        flex-direction: column-reverse;
+    }
+
+    .use__gallary-box{
+        margin-bottom: 56px;
+    }
+
+    .use__discr{
+        text-align: center;
+    }
+}
+
+@media(max-width:480px){
+    .use__title{
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .use::after{
+        top: 33%;
+    }
+}
+
+
+
+

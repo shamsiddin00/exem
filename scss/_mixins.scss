@@ -1,0 +1,84 @@
+@mixin flax-align {
+  display: flex;
+  align-items: center;
+}
+
+@mixin between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin navigations {
+  font-family:$font-Mono;
+  font-weight:$BOLD;
+  font-size: 15px;
+  line-height: 25px;
+  color: $color-paragraph;
+  transition: 0.3s ease;
+
+  &:hover{
+    color: $color-button;
+  }
+}
+
+@mixin btn {
+  padding: 14px 39px;
+  text-align: center;
+  font-family: $font-Mono;
+  font-size: 15px;
+  line-height: 25px;
+  color: $color-font-hero;
+  background-color: $color-button;
+  border: 1px solid $color-button;
+  transition: 0.4s ease;
+
+  &:hover{
+    color: $color-button;
+    background-color: $color-font-hero;
+  }
+
+  &:active{
+    background-color: transparent
+  }
+}
+
+@mixin titles-56 {
+  font-family:$font-Mono;
+  font-weight:$BOLD;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: $color-font-hero;
+}
+
+@mixin titles-48{
+  font-family:$font-Mono;
+  font-weight:$BOLD;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14px;
+  color: $color-font;
+  margin-bottom: 24px;
+}
+
+@mixin titles-40{
+  font-family:$font-Mono;
+  font-weight:$BOLD;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.79px;
+  color: $color-font;
+}
+
+@mixin titles-24{
+  font-family:$font-Mono;
+  font-weight:$BOLD;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  color: $color-font;
+}
+
+
+

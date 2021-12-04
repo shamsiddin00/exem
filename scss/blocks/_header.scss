@@ -1,0 +1,60 @@
+.header{
+    padding: 22px 0;
+}
+
+.header__inner{
+    @include between;
+}
+
+.header__offcanvas-link{
+    display: none;
+    visibility: hidden;
+}
+
+.header__offcanvas-icon{
+    font-size: 28px;
+    color: $color-button;
+}
+
+.header__logo-link{
+    display: inline-block;
+    margin-right: 5%;
+}
+
+.header__list{
+    @include flax-align; 
+    margin-right: auto;
+}
+
+.header__item:not(last-child){
+    margin-right: 32px;
+}
+
+.header__link{
+    @include navigations;
+}
+
+.header__button{
+    @include btn;
+}
+
+@media(max-width:768px){
+    .header__list{
+        display: none;
+        visibility: hidden;
+    }
+
+    .header__button{
+        display: none;
+        visibility: hidden;
+    }
+
+    .header__logo-link{
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
